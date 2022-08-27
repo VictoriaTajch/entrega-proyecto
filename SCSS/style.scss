@@ -1,0 +1,729 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+
+.main{
+    background-image:linear-gradient(to bottom,rgb(252, 217, 223), rgb(255, 228, 233), white);
+}
+
+.main_ilus{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+    background-image:linear-gradient(to bottom,rgb(252, 217, 223), rgb(255, 228, 233), white);
+}
+/*------------------------------------------
+-------------import------------------------
+------------------------------------*/
+@import "boton_cute";
+@import"mixin_flex";
+@import "mixin_ilustraciones";
+/*-------------------------------------------------------
+-------------------------------------------------------
+--------------------------------------------------------
+----------------HEADER----------------------------------
+------------------------------------------------------
+--------------------------------------------------------
+-------------------------------------------------------*/
+.header{
+    
+    background: pink;
+  border-radius: 2rem;
+.caja_menu{
+    @include flexible(flex,row,center,center,center);
+   
+    .logo {
+        width: 10rem;
+        border-radius: 7rem;
+       
+    }
+.contenedor_menu{background-color: none;
+    .contenedor_menu ul {
+        display:flex ;
+    -webkit-column-gap: 1rem;
+    column-gap: 1rem;
+    
+         list-style-type: none;
+         margin-top: 2rem;
+         margin-bottom: 2rem;}
+
+         .contenedor_menu li{
+            background: url(img/conejo.png) no-repeat left;
+            height:2rem;
+            padding-left: 2rem;
+          
+            .contenedor_menu li a:hover {
+                background-color: aliceblue;
+                color: rgb(73,7,38);}}
+         .contenedor_menu a{
+                    background-color: rgb(73,7,38);
+                    padding: 1rem;
+                    font-size: 1.6rem;
+                    color: aliceblue;
+                    font-family: 'Cookie', cursive;
+                    border-radius: 1rem;
+                    justify-content: space-around;
+                    text-decoration: none }  
+                      }}}
+
+
+/*----------------------------------------------------------
+-----------------------------------------------------------
+--------------------------------------------------------------
+----------------Footer----------------------------
+--------------------------------------------------------------
+-------------------------------------------------------------*/
+.footer{
+    @include flexible(flex,column,center,stretch,center);
+    background-color: aliceblue ;
+    background-image: url(img/cinnamon.jpg);
+    color: rgb(20, 7, 18);
+   border-style:solid;
+   border-width: 0.5rem;
+   border-color: rgb(248, 228, 241);
+   border-radius: 0.5rem;
+
+   .footer a{
+    color: rgb(54, 20, 46);
+    text-decoration: none;
+}
+
+.footer li{
+    list-style: none;
+}
+.instagram{
+    width: 3rem;
+    margin: 0.3rem;
+}
+ 
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+----------------Página de index----------------------------------------------------------------
+------------------------------------------------------
+--------------------------------------------------------
+-------------------------------------------------------*/
+
+.caja_tituloindex{  
+    display: flex;
+    justify-content: center;
+      margin: 2rem;
+      background-color: rgb(231, 243, 253);
+      width: 50rem;
+      border-radius: 2rem;
+      border-style: solid;
+      border-color: rgb(248, 248, 248);
+      border-width: 0.8rem;
+  }
+.kirby{
+    background-image: url(img/kirby.gif);
+    background-size:contain;
+    background-attachment: fixed;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 1rem;
+    border-radius: 2rem;
+    .caja_textosobremi{
+        display: flex;
+        align-items: center;
+        font-family:monospace;
+    
+        height: 10rem;
+        background-image: url(img/cinnamon.jpg);
+        border-style: solid;
+        border-radius: 2rem;
+        border-width: 0.8rem;
+        border-color: aliceblue;
+    }
+    .orden_imagenindex{
+        display: flex;
+    justify-content: flex-end;
+    .imagen_index{
+        width: 60%;
+        border-radius: 3.5rem;
+    }
+    }    
+}
+
+/*----------------------------------------------------------
+-----------------------------------------------------------
+--------------------------------------------------------------
+----------------Página de comisiones----------------------------
+--------------------------------------------------------------
+-------------------------------------------------------------*/
+.cajasde_comisiones{
+    display: flex;
+   justify-content: center;
+   flex-direction: row;
+   .caja__comision1 {
+    width: 25rem;
+    overflow: hidden;
+    border: 1.5rem solid white;
+    border-radius: 1rem;
+    padding: 3.3rem;
+    margin: 2rem;
+    background-image: url(img/strawberry.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: monospace;
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+@-webkit-keyframes shadow-pop-tr {
+0% {
+-webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+-webkit-transform: translateX(0) translateY(0);
+      transform: translateX(0) translateY(0);
+}
+100% {
+-webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+      box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+-webkit-transform: translateX(-8px) translateY(8px);
+      transform: translateX(-8px) translateY(8px);
+}
+}
+@keyframes shadow-pop-tr {
+0% {
+-webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+-webkit-transform: translateX(0) translateY(0);
+      transform: translateX(0) translateY(0);
+}
+100% {
+-webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+      box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+-webkit-transform: translateX(-8px) translateY(8px);
+      transform: translateX(-8px) translateY(8px);
+}}
+
+
+}
+.caja_titulocomision{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}}
+
+/*----------------------------------------------------------
+-----------------------------------------------------------
+--------------------------------------------------------------
+----------------Página de materiales----------------------------
+--------------------------------------------------------------
+-------------------------------------------------------------*/
+
+.texto_sobremi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    margin: 2.5rem;
+   
+}
+
+.caja_textosobremi{
+    display: flex;
+    align-items: center;
+    font-family:monospace;
+
+    height: 10rem;
+    background-image: url(img/cinnamon.jpg);
+    border-style: solid;
+    border-radius: 2rem;
+    border-width: 0.8rem;
+    border-color: aliceblue;
+}
+
+
+.contenedor_todaslascajas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    .orden_cajasmateriales{
+        display: flex;
+        align-items: stretch;
+        font-family:monospace;
+        
+.caja__materiales {
+
+    background-color: aliceblue;
+    background-image: url(img/original.png);
+    background-position: center;
+    width: 25rem;
+    height: 19rem;
+    margin: 1rem;
+    padding: 4rem;
+    border: dashed palevioletred 0.4rem;
+    border-radius: 1rem;
+    background-attachment: fixed;
+.titulo1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 1rem;
+        color: rgb(54, 20, 46);
+        margin: 1rem;
+        font-family: 'Cookie', cursive;
+    }
+.lista_mat{
+        background-color: rgba(240, 248, 255, 0.767);
+    }
+    
+ 
+}
+}
+}
+
+
+
+
+
+
+
+
+/*------------------------caja de fighter-----------------------------*/
+
+.caja_perfil{
+display: flex;
+flex-direction:column;
+align-items:center;
+background-color:pink;
+
+background-image: url(img/cherry.jpg) ;
+background-size:cover;
+width: 25rem;
+height: 56rem;
+border-radius: 3rem;
+margin-top: auto;
+margin-bottom: 1rem;
+font-family:monospace;
+
+}
+
+.caja_fighter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .fighter_img{
+
+        margin-top: 1rem;
+        width: 9.5rem;
+        border-radius: 7rem;
+        border-style: solid;
+        border-color: rgb(240, 255, 254);
+        border-width: 0.8rem;
+    }
+    
+    .titulo_fighter{
+        font-family: 'Cookie', cursive;
+        font-size: 1.9rem;
+        margin: 1rem;
+    }
+    
+/*-----------------------------
+-------barra de progreso------
+-------------------------------*/
+    .armas{
+        @include flexible(flex,column,center,center,none);
+    background-color: rgba(240, 248, 255, 0.911) ;
+    
+    border-radius: 3rem;
+    width: 20rem;
+    height: 23rem;
+    margin-top: 2rem;
+    progress {
+        display: block;
+        height: 2rem;
+        width: 19rem;
+        margin: 1rem auto;
+        padding: 0.5rem;
+        border:  none;
+        background: rgb(250, 217, 224);
+        border-radius: 1rem;
+        border-style: solid;
+        border-color: white;
+        progress::-moz-progress-bar {
+            border-radius: 1rem;
+            background: rgb(73,7,38);
+        }
+        
+        progress::-webkit-progress-bar {
+            background: transparent;
+        }
+        
+        progress::-webkit-progress-value {
+            border-radius: 1rem;
+            height: 0.6rem;
+            background: rgb(73,7,38);
+        }}}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------
+------------------página ilustraciones----------------------------------
+-----------------------------------------------------------------*/
+
+.fondode_ilustraciones{
+    background-image: url(img/nubes.webp);
+    background-size:contain;
+    background-attachment: fixed;
+    border-style: solid;
+    border-color: aliceblue;
+    border-width: 1rem;
+    border-radius: 2rem;
+    .caja_titulo{
+        display: flex;
+       justify-content: center;
+         margin: 2rem;
+         background-color: rgb(231, 243, 253);
+         width: 50rem;
+         border-radius: 2rem;
+         border-style: solid;
+         border-color: rgb(248, 248, 248);
+         border-width: 0.8rem;
+         font-family: 'Cookie', cursive;
+     }
+}
+
+.imagen_ilus{
+    @include image(url(./img/demon.jpg),30rem,30rem,0 auto,cover,2rem)
+    }
+
+.info_ilus{
+        width:30rem;
+        height:30rem;
+        background-color: aliceblue;
+        transition: opacity 0.6 ease-in-out;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        align-content: center;
+        border-radius: 25rem;
+    }
+.texto_ilus{
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+    width: 20rem;
+
+}    
+    
+    .imagen_ilus:hover .info_ilus{
+    cursor: pointer;
+    opacity:0.8
+    }
+    
+    .imagen_kitty{
+        @include image(url(./img/kitty.jpg),30rem,30rem,0 auto,cover,2rem);
+    }
+    .imagen_kitty:hover .info_ilus{cursor: pointer;
+        opacity:0.8
+           
+        }
+    
+    
+        .imagen_alice{
+            @include image(url(./img/Alice.jpg),30rem,30rem,0 auto,cover,2rem);
+        
+            }    
+    .imagen_alice:hover .info_ilus{ cursor: pointer;
+        opacity:0.8}
+      
+.flex_boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dsc-btn-cute{
+    @include botoncute(pink,solid,0.3rem,rgb(73,7,38),0.3rem.5rem,2rem,
+    2rem,pointer,1.3rem,bolder,'Cookie', cursive);
+
+}
+.dsc-btn-cute:hover {
+    background-color: rgb(73,7,38);
+    color: aliceblue;
+}    
+
+
+.centro_caja{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*------------------------------------------
+--------------------------
+------------------------------------------*/
+
+.titulo_ilustraciones{
+    color:rgb(73,7,38);
+    font-family: 'Cookie', cursive;
+
+}
+
+.titulo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    color: rgb(54, 20, 46);
+    margin: 1rem;
+    font-family: 'Cookie', cursive;
+}
+
+.titulo2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    color: rgb(54, 20, 46);
+margin-bottom: 1rem;
+    font-family: 'Cookie', cursive;
+    font-size: 1.6rem;
+
+}
+
+.titulo_index{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    color: rgb(54, 20, 46);
+    margin: 1rem;
+    font-family: 'Cookie', cursive;
+    font-size: 5rem;
+
+}
+
+
+/*-------------------------------------------------
+---------------------------------------------------------
+-----------------MEDIA------------------------------
+--------------------------------------------
+-------------------------------------------------*/
+@media screen and (max-width: 650px){
+    
+  .main_ilus{
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+   
+  }
+    
+.caja_menu ul{
+    display: flex;
+    flex-direction: column;
+justify-content: flex-end;
+
+   }
+.caja_menu li{
+    @include flexible(flex,column,stretch,center,center);
+    margin: 3vh;
+}
+
+
+.caja_tituloindex {
+    
+    font-size: 10vh ;
+   width: fit-content;
+   width: -moz-fit-content;
+       height: fit-content;  
+   }
+
+   
+.kirby{
+    @include flexible(flex,column,center,center,center);
+    background-size:cover;
+}
+.caja_textosobremi{
+    margin:5vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    height:fit-content;
+    font-size: 3vh;
+    word-spacing: 1vh;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.705);
+    background-image: none;
+    color: rgb(54, 20, 46);
+}
+.orden_imagenindex{
+
+width: 50vh;
+}
+
+.caja_titulo{
+    width:fit-content;
+    width: -moz-fit-content;
+    height: fit-content;  
+}
+
+.fondode_ilustraciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:fit-content;
+    width: -moz-fit-content;
+    height: fit-content;  
+    border-left: none;
+    border-right: none;
+}
+.imagen_ilus{
+    width:fit-content;
+    width: -moz-fit-content;
+    height: fit-content;    
+}
+.imagen_alice{
+    width:fit-content;
+    width: -moz-fit-content;
+    height: fit-content;  
+}
+.imagen_kitty{
+    width:fit-content;
+    width: -moz-fit-content;
+    height: fit-content;  
+}
+.info_ilus{
+    width:56vh;
+    height: 60vh;  
+}
+
+.cajasde_comisiones{
+    display: flex;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width:fit-content;
+    height: fit-content;  
+  
+}
+.caja__comision1{
+    width:fit-content;
+    width: -moz-fit-content;
+    height: fit-content; 
+    font-size: 3vh; 
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.titulo2{font-size: 5vh;}
+.contenedor_todaslascajas{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    
+}
+.orden_cajasmateriales{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.caja__materiales{
+    width:fit-content;
+    width: -moz-fit-content;
+    height: fit-content; 
+}
+.caja_perfil{
+    width:fit-content;
+    width: -moz-fit-content;
+    height: fit-content; 
+    display: flex;
+    align-items: stretch;
+}
+}
+/*-------------------------------------------------------------------------------------------------------------------
+--------------------------------------media screen tablets----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+@media  (max-width: 1200px){
+
+    .contenedor_menu ul{
+        display: flex;
+        flex-direction: column;
+        width: -moz-fit-content;
+        width: fit-content;
+       }
+    
+       .contenedor_menu li{
+        margin: 2vh;
+        width: fit-content;
+        width: -moz-fit-content;
+        height: fit-content;
+    }
+     
+.contenedor_menu a {
+    font-size: 4.8vh;
+}
+
+.caja_titulo, .caja_tituloindex, .caja_titulocomision{
+    font-size:3vh;
+}
+.conejo{
+    width: 5vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+.footer{
+    font-size:2vh;
+
+    height: fit-content;
+}
+.titulo2{
+    font-size: 4vh;
+}
+.contenedor_todaslascajas{
+    @include flexible(flex,column,center,none,center);
+    
+}
+.caja_textosobremi{
+    font-size: xx-large;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+}
+.cajasde_comisiones{
+    font-size: 2vh;
+
+}
+
+.caja__materiales{
+width: 30vh ;
+height: 40vh;
+font-size: x-large;
+}
+
+.caja_perfil, .caja_fighter{
+    font-size:x-large;
+    text-align: center;
+}
+
+.titulo_fighter{
+    font-size: 4.7vh;
+}
+}

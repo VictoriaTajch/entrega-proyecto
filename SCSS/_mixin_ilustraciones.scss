@@ -1,0 +1,18 @@
+@mixin imagen($image, $wid, $height, $marg, $size, $radius)
+{background-image: $image;
+width: $wid;
+height: $height;
+margin: $marg ;
+background-size: $size;
+border-radius: $radius;
+}
+
+
+.imagen_ilus{
+    background-image: url(./img/demon.jpg);
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+    background-size:cover;
+    border-radius: 2rem;
+    }

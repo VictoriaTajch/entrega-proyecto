@@ -1,0 +1,609 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+.main {
+  background-image: linear-gradient(to bottom, #fcd9df, #ffe4e9, white); }
+
+.main_ilus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-image: linear-gradient(to bottom, #fcd9df, #ffe4e9, white); }
+
+/*-------------------------------------------------------
+-------------------------------------------------------
+--------------------------------------------------------
+----------------HEADER----------------------------------
+------------------------------------------------------
+--------------------------------------------------------
+-------------------------------------------------------*/
+.header {
+  background: pink;
+  border-radius: 2rem; }
+  .header .caja_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center; }
+    .header .caja_menu .logo {
+      width: 10rem;
+      border-radius: 7rem; }
+    .header .caja_menu .contenedor_menu {
+      background-color: none; }
+      .header .caja_menu .contenedor_menu .contenedor_menu ul {
+        display: flex;
+        -webkit-column-gap: 1rem;
+        column-gap: 1rem;
+        list-style-type: none;
+        margin-top: 2rem;
+        margin-bottom: 2rem; }
+      .header .caja_menu .contenedor_menu .contenedor_menu li {
+        background: url(img/conejo.png) no-repeat left;
+        height: 2rem;
+        padding-left: 2rem; }
+        .header .caja_menu .contenedor_menu .contenedor_menu li .contenedor_menu li a:hover {
+          background-color: aliceblue;
+          color: #490726; }
+      .header .caja_menu .contenedor_menu .contenedor_menu a {
+        background-color: #490726;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: aliceblue;
+        font-family: 'Cookie', cursive;
+        border-radius: 1rem;
+        justify-content: space-around;
+        text-decoration: none; }
+
+/*----------------------------------------------------------
+-----------------------------------------------------------
+--------------------------------------------------------------
+----------------Footer----------------------------
+--------------------------------------------------------------
+-------------------------------------------------------------*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  background-color: aliceblue;
+  background-image: url(img/cinnamon.jpg);
+  color: #140712;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: #f8e4f1;
+  border-radius: 0.5rem; }
+  .footer .footer a {
+    color: #36142e;
+    text-decoration: none; }
+  .footer .footer li {
+    list-style: none; }
+  .footer .instagram {
+    width: 3rem;
+    margin: 0.3rem; }
+
+/*--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
+----------------Página de index----------------------------------------------------------------
+------------------------------------------------------
+--------------------------------------------------------
+-------------------------------------------------------*/
+.caja_tituloindex {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  background-color: #e7f3fd;
+  width: 50rem;
+  border-radius: 2rem;
+  border-style: solid;
+  border-color: #f8f8f8;
+  border-width: 0.8rem; }
+
+.kirby {
+  background-image: url(img/kirby.gif);
+  background-size: contain;
+  background-attachment: fixed;
+  border-style: solid;
+  border-color: aliceblue;
+  border-width: 1rem;
+  border-radius: 2rem; }
+  .kirby .caja_textosobremi {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    height: 10rem;
+    background-image: url(img/cinnamon.jpg);
+    border-style: solid;
+    border-radius: 2rem;
+    border-width: 0.8rem;
+    border-color: aliceblue; }
+  .kirby .orden_imagenindex {
+    display: flex;
+    justify-content: flex-end; }
+    .kirby .orden_imagenindex .imagen_index {
+      width: 60%;
+      border-radius: 3.5rem; }
+
+/*----------------------------------------------------------
+-----------------------------------------------------------
+--------------------------------------------------------------
+----------------Página de comisiones----------------------------
+--------------------------------------------------------------
+-------------------------------------------------------------*/
+.cajasde_comisiones {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+  .cajasde_comisiones .caja__comision1 {
+    width: 25rem;
+    overflow: hidden;
+    border: 1.5rem solid white;
+    border-radius: 1rem;
+    padding: 3.3rem;
+    margin: 2rem;
+    background-image: url(img/strawberry.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: monospace;
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px); } }
+
+@keyframes shadow-pop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0); }
+  100% {
+    -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px); } }
+  .cajasde_comisiones .caja_titulocomision {
+    display: flex;
+    align-items: center;
+    flex-direction: row; }
+
+/*----------------------------------------------------------
+-----------------------------------------------------------
+--------------------------------------------------------------
+----------------Página de materiales----------------------------
+--------------------------------------------------------------
+-------------------------------------------------------------*/
+.texto_sobremi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2.5rem; }
+
+.caja_textosobremi {
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  height: 10rem;
+  background-image: url(img/cinnamon.jpg);
+  border-style: solid;
+  border-radius: 2rem;
+  border-width: 0.8rem;
+  border-color: aliceblue; }
+
+.contenedor_todaslascajas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem; }
+
+.lista_mat {
+  background-color: rgba(240, 248, 255, 0.767); }
+
+/*----------------caja de materiales----------------------*/
+.orden_cajasmateriales {
+  display: flex;
+  align-items: stretch;
+  font-family: monospace; }
+
+.caja__materiales {
+  background-color: aliceblue;
+  background-image: url(img/original.png);
+  background-position: center;
+  width: 25rem;
+  height: 19rem;
+  margin: 1rem;
+  padding: 4rem;
+  border: dashed palevioletred 0.4rem;
+  border-radius: 1rem;
+  background-attachment: fixed; }
+
+/*------------------------caja de fighter-----------------------------*/
+.titulo_fighter {
+  font-family: 'Cookie', cursive;
+  font-size: 1.9rem;
+  margin: 1rem; }
+
+.caja_perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: pink;
+  background-image: url(img/cherry.jpg);
+  background-size: cover;
+  width: 25rem;
+  height: 56rem;
+  border-radius: 3rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  font-family: monospace; }
+
+.caja_fighter {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.fighter_img {
+  margin-top: 1rem;
+  width: 9.5rem;
+  border-radius: 7rem;
+  border-style: solid;
+  border-color: #f0fffe;
+  border-width: 0.8rem; }
+
+/*-----------------------------
+-------barra de progreso------
+-------------------------------*/
+.armas {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: rgba(240, 248, 255, 0.911);
+  border-radius: 3rem;
+  width: 20rem;
+  height: 23rem;
+  margin-top: 2rem; }
+
+progress {
+  display: block;
+  height: 2rem;
+  width: 19rem;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: none;
+  background: #fad9e0;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: white; }
+
+progress::-moz-progress-bar {
+  border-radius: 1rem;
+  background: #490726; }
+
+progress::-webkit-progress-bar {
+  background: transparent; }
+
+progress::-webkit-progress-value {
+  border-radius: 1rem;
+  height: 0.6rem;
+  background: #490726; }
+
+/*-----------------------------------
+-------------termina barra progreso----
+--------------------------------------*/
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------
+------------------página ilustraciones----------------------------------
+-----------------------------------------------------------------*/
+.fondode_ilustraciones {
+  background-image: url(img/nubes.webp);
+  background-size: contain;
+  background-attachment: fixed;
+  border-style: solid;
+  border-color: aliceblue;
+  border-width: 1rem;
+  border-radius: 2rem; }
+
+.imagen_ilus {
+  background-image: url(./img/demon.jpg);
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+  background-size: cover;
+  border-radius: 2rem; }
+
+.info_ilus {
+  width: 30rem;
+  height: 30rem;
+  background-color: aliceblue;
+  transition: opacity 0.6 ease-in-out;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border-radius: 25rem; }
+
+.texto_ilus {
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  width: 20rem; }
+
+.imagen_ilus:hover .info_ilus {
+  cursor: pointer;
+  opacity: 0.8; }
+
+.imagen_kitty {
+  background-image: url(./img/kitty.jpg);
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+  background-size: cover;
+  border-radius: 2rem; }
+
+.imagen_kitty:hover .info_ilus {
+  cursor: pointer;
+  opacity: 0.8; }
+
+.imagen_alice {
+  background-image: url(./img/Alice.jpg);
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+  background-size: cover;
+  border-radius: 2rem; }
+
+.imagen_alice:hover .info_ilus {
+  cursor: pointer;
+  opacity: 0.8; }
+
+.flex_boton {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.dsc-btn-cute {
+  background-color: pink;
+  border-style: solid;
+  border-width: 0.3rem;
+  border-color: #490726;
+  border-radius: 0.3rem;
+  width: 5rem;
+  height: 2rem;
+  margin: 2rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-family: 'Cookie', cursive; }
+
+.dsc-btn-cute:hover {
+  background-color: #490726;
+  color: aliceblue; }
+
+.centro_caja {
+  display: flex;
+  justify-content: center; }
+
+.caja_titulo {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  background-color: #e7f3fd;
+  width: 50rem;
+  border-radius: 2rem;
+  border-style: solid;
+  border-color: #f8f8f8;
+  border-width: 0.8rem;
+  font-family: 'Cookie', cursive; }
+
+/*------------------------------------------
+--------------------------
+------------------------------------------*/
+.titulo_ilustraciones {
+  color: #490726;
+  font-family: 'Cookie', cursive; }
+
+.titulo1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1rem;
+  color: #36142e;
+  margin: 1rem;
+  font-family: 'Cookie', cursive; }
+
+.titulo2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1rem;
+  color: #36142e;
+  margin-bottom: 1rem;
+  font-family: 'Cookie', cursive;
+  font-size: 1.6rem; }
+
+.titulo_index {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  color: #36142e;
+  margin: 1rem;
+  font-family: 'Cookie', cursive;
+  font-size: 5rem; }
+
+/*-------------------------------------------------
+---------------------------------------------------------
+-----------------MEDIA------------------------------
+--------------------------------------------
+-------------------------------------------------*/
+@media screen and (max-width: 650px) {
+  .main_ilus {
+    display: flex;
+    align-items: center;
+    align-content: stretch; }
+  .caja_menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .caja_menu li {
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3vh; }
+  .caja_tituloindex {
+    font-size: 10vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content; }
+  .kirby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-size: cover; }
+  .caja_textosobremi {
+    margin: 5vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    font-size: 3vh;
+    word-spacing: 1vh;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.705);
+    background-image: none;
+    color: #36142e; }
+  .orden_imagenindex {
+    width: 50vh; }
+  .caja_titulo {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content; }
+  .fondode_ilustraciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    border-left: none;
+    border-right: none; }
+  .imagen_ilus {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content; }
+  .imagen_alice {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content; }
+  .imagen_kitty {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content; }
+  .info_ilus {
+    width: 56vh;
+    height: 60vh; }
+  .cajasde_comisiones {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content; }
+  .caja__comision1 {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    font-size: 3vh; }
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .titulo2 {
+    font-size: 5vh; }
+  .contenedor_todaslascajas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .orden_cajasmateriales {
+    display: flex;
+    flex-direction: column; }
+  .caja__materiales {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content; }
+  .caja_perfil {
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: stretch; } }
+
+/*-------------------------------------------------------------------------------------------------------------------
+--------------------------------------media screen tablets----------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  .contenedor_menu ul {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    width: -moz-fit-content; }
+  .contenedor_menu li {
+    margin: 2vh;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content; }
+  .contenedor_menu a {
+    font-size: 4.8vh; }
+  .caja_titulo, .caja_tituloindex, .caja_titulocomision {
+    font-size: 3vh; }
+  .conejo {
+    width: 5vh;
+    margin-left: 1vh;
+    margin-right: 1vh; }
+  .footer {
+    font-size: 2vh;
+    height: fit-content; }
+  .titulo2 {
+    font-size: 4vh; }
+  .contenedor_todaslascajas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .caja_textosobremi {
+    font-size: xx-large;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content; }
+  .cajasde_comisiones {
+    font-size: 2vh; }
+  .caja__materiales {
+    width: 30vh;
+    height: 40vh;
+    font-size: x-large; }
+  .caja_perfil, .caja_fighter {
+    font-size: x-large;
+    text-align: center; }
+  .titulo_fighter {
+    font-size: 4.7vh; } }

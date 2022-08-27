@@ -1,0 +1,18 @@
+@mixin botoncute($color,$borders,$borderw,$borderc,$borderr,$w,$h,$m,$cursor
+,$fonts,$fontw,$fontf){
+    background-color: $color;
+    border-style: $borders;
+    border-width: $borderw;
+    border-color: $borderc;
+    border-radius: $borderr;
+    width: $w;
+    height: $h;
+    margin: $m;
+    cursor:$cursor;
+    font-size: $fonts;
+    font-weight: $fontw;
+    font-family: $fontf;
+
+
+}
+
